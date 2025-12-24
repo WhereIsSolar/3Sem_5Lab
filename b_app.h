@@ -22,7 +22,6 @@ public:
     virtual void handleInput(const sf::Event& event) = 0;
 
     void run() {
-        // Создаем окно
         window.create(
             sf::VideoMode({
                 static_cast<unsigned int>(winWidth),
@@ -32,7 +31,6 @@ public:
         );
         window.setFramerateLimit(60);
         
-        // Отладочная информация
         std::cout << "Окно создано: " << winWidth << "x" << winHeight << std::endl;
         
         setup();
